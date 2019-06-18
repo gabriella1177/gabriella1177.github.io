@@ -2,14 +2,109 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
-@import "./top-section.css";
-
-@import "./services.css";
-
 body {
- /* background: #eeeeee; */
+    background: white;
+    /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
+    font: 20px "Roboto", Helvetica, Arial, sans-serif;
+    width: 100%;
+    margin: -2% 0 30px 0;
 } 
-.container{
-    max-width: 1150px;
-    margin: 0 auto;
+
+img {
+    height: 180px;
+    width: 320px;
+    -webkit-filter: grayscale(75%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+    border: 2px solid grey;
+    margin-top: 35px;
+
 }
+
+#top {
+    width: 100%;
+    height: 500px;
+    background: #FDE0E5;
+    padding-top: 0;
+}
+
+.skills-section, .my-work-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 5%;
+}
+
+.intro {
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.intro-name {
+    position: absolute;
+    top: 60px; 
+    left: 20%;
+    font-size: 3em;
+}
+
+.intro-title {
+    top: 170px; 
+    font-size: 1.25em;
+}
+
+.intro-resume {
+    position: absolute;
+    top: 300px; 
+    left: 45%;
+}
+
+a.butn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    height: auto;
+    color: white;
+    font-size: 18px;
+    background: #101112;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+  }
+  
+  a.butn:hover {
+    background: #525557;
+    text-decoration: none;
+  }
+
+  .butn > i {
+      color: #FDE0E5;
+  }
+  
+  .intro-text {
+      color: white;
+      text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+  }
+
+  .title {
+      font-weight: bold;
+  }
+
+  footer {
+        background: #FDE0E5;
+        margin-bottom: -1%;
+  }
